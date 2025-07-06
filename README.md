@@ -71,7 +71,7 @@ wiki/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/django-wiki.git
+   git clone https://github.com/omar123098/django-wiki.git
    cd django-wiki
    ```
 
