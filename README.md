@@ -145,24 +145,6 @@ Search is implemented using Python's string matching to find entries containing 
 ### Random Page Feature
 Uses Python's `random.choice()` to select a random entry from the available entries list.
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Built as part of CS50's Web Programming with Python and JavaScript course
-- Uses Django framework for web development
-- Bootstrap for responsive design
-- Python-markdown for Markdown processing
 
 ## Screenshots
 
