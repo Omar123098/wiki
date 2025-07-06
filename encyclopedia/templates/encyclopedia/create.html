@@ -1,0 +1,39 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Create New Page
+{% endblock %}
+
+{% block body %}
+    <h1>Create New Page</h1>
+    {% if error %}
+        <div style="color: red;">{{ error }}</div>
+    {% endif %}
+    <form action="{% url 'create' %}" method="POST">
+        {% csrf_token %}
+        <p>
+            <label for="title">Title:</label><br>
+            <input type="text" name="title" id="title" required>
+        </p>
+        <p>
+            <label for="content">Content:</label><br>
+            <textarea name="content" id="content" style="height: 300px; width: 80%; min-height: 100px;" required></textarea>
+        </p>
+        <button type="submit" style="
+            background: #3578e5;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 20px;
+            font-size: 1em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+        " 
+        onmouseover="this.style.background='#285bb5';"
+        onmouseout="this.style.background='#3578e5';"
+        >
+            Save Page
+        </button>
+    </form>
+{% endblock %}

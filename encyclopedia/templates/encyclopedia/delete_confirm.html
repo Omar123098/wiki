@@ -1,0 +1,20 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Delete {{ title }}
+{% endblock %}
+
+{% block body %}
+    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+        <h1 style="margin: 0; margin-right: 20px;">Delete Entry</h1>
+        
+        <form action="{% url 'delete' title %}" method="POST" style="display: inline; margin-right: 5px;">
+            {% csrf_token %}
+            <input type="submit" value="Yes, Delete" style="background-color: #dc3545; color: white; padding: 8px 16px; border: none; border-radius: 4px;">
+        </form>
+        
+        <a href="{% url 'entry' title %}" style="background-color: #6c757d; color: white; padding: 8px 16px; text-decoration: none; border-radius: 4px;">Cancel</a>
+    </div>
+    
+    <p>Are you sure you want to delete the entry "{{ title }}"? This action cannot be undone.</p>
+{% endblock %}
