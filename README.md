@@ -24,6 +24,12 @@ A simple wiki encyclopedia web application built with Django that allows users t
 ```
 wiki/
 ├── manage.py
+├── README.md
+├── assets/
+│   ├── homepage.png
+│   ├── entry_view.png
+│   ├── edit_page.png
+│   └── search_results.png
 ├── encyclopedia/
 │   ├── __init__.py
 │   ├── admin.py
@@ -149,14 +155,18 @@ Uses Python's `random.choice()` to select a random entry from the available entr
 ## Screenshots
 
 ### Home Page
+![Home Page](HomePage.png)
 The main page displaying all available wiki entries.
 
 ### Entry View
+![Entry View](entry.png)
 Individual wiki entry page with rendered Markdown content and edit/delete options.
 
 ### Create/Edit Pages
+![Edit Pages](edit.png)
 Forms for creating new entries or editing existing ones with large text areas for content.
 
 ### Search Results
+![Search Results](search.png)
 Search functionality showing matching entries based on title keywords.
 
